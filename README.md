@@ -1,4 +1,4 @@
-# JavaScript Quiz Game
+#Coding Quiz Game
 
 ## Description
 This JavaScript Quiz Game is an interactive web application that challenges users with multiple-choice questions on various topics. It's designed to test knowledge while providing immediate feedback and scores.
