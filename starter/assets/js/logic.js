@@ -56,8 +56,11 @@ function checkAnswer(index) {
     correctSound.play();
     showFeedback("Correct!");
   } else {
-    time -= 10;
-    timerElement.textContent = time;
+    time -= 2;
+    if (time <= 0) {
+      time = 0;
+      // Stop the timer here
+    }
     incorrectSound.play();
     showFeedback("Wrong Answer");
   }
@@ -70,7 +73,6 @@ function checkAnswer(index) {
     endQuiz();
   }
 }
-
 //Add a timer function
 function startTimer() {
   timer = setInterval(function () {
